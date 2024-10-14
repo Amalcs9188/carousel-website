@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    box-sizing: border-box;
+
+}
+
+.topdiv{width: 100%;
+    height: 10px;
+    background-color:rgb(211, 107, 114) ;
+    border-radius: 20px 20px 0 0
+
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+}
+
+nav h1{
+    text-transform: uppercase;
+    font-family: "Protest Guerrilla", sans-serif;
+    letter-spacing: 7px;
+    font-size: 1.9em;
+    font-weight: bold;
+    
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    padding: 0 10px;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Abel", sans-serif;
+}
+nav button{
+    color: white;
+    background-color:rgb(211, 107, 114) ;
+    padding: 10px 10px;
+    border: 1px solid;
+    font-size: .9em;
+    
+}
+nav button:hover{
+    background-color:rgb(244, 163, 169) ;
+   
+}
+nav a{
+    text-transform: uppercase;
+    margin: 0 5px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+nav a::after{
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background: linear-gradient(92deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgb(250, 131, 3) 99%);;
+    width: 0;
+    height: 2px;
+}
+
+nav a:hover::after{
+    width: 100%;
+    
+
+    
+}
+.sidebar{
+    position: absolute;
+    right: 0;
+    top:0%;
+    background-color: rgba(244, 163, 168, 0.71) ;
+    width: 40%;
+    box-shadow: 2px 2px 8px;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    backdrop-filter:  blur(5px);
+    z-index: 999;
+}
+
+.menu-side,
+.menu-side li,
+.menu-side a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(86, 90, 94);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+
+
+
+}
+.menu-side li :hover{
+    background-color: rgb(155, 67, 73);
+    color: white;
+    
+}
+.icon-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.icon-side li{
+    list-style: none;
+    margin: 15px;
+}
+.icon-side i{
+    font-size: 1.8em;
+}
+.icon-side i:hover{
+    transform: scale(1.5);
+}
+
+.sidebar button{
+    color: white;
+    background-color:#d36b72 ;
+    padding: 10px 10px;
+    border: 1px solid;
+    font-size: .9em;
+    box-shadow: 2px 2px 7px;
+    
+}
+.btnm{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.sidebar button:hover{
+    background-color:#f2626b ;
+}
+
+/* menu icon  */
+
+.menu-icon{
+    font-size: 1.5em;
+    position: absolute;
+    right: 30px;
+    display: none;
+    
+}
+#menu-icon{
+    display: none;
+}
+.hidebar{
+    margin: 20px;
+    font-size: 1.em;
+    border: 2px solid;
+    width: max-content;
+    padding: 3px;
+    color: rgb(239, 224, 224);
+    background-color: rgb(176, 79, 79);
+}
+@media (max-width: 1200px) {
+    .hided{
+        display: none;
+    }
+    #menu-icon{
+        display: flex;
+    }
+  
+  }
+@media (max-width: 780px) {
+   nav h1{
+    font-size: 1.4em;
+    z-index: 10;
+   }
+   .sidebar{
+    width: 100%;
+   }
+  
+  }
+
+  .parallax {
+    margin-top: 25px;
+    background-image: url("./victor-freitas-hOuJYX2K5DA-unsplash.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .parallax-2 {
+    
+    background-image: url("./victor-freitas-WvDYdXDzkhs-unsplash.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ .img-lady-div{
+    display: flex;
+    justify-content: end;
+    position: relative;
+ }
+
+ .first-img-back{
+    background-image: url(./victor-freitas-WvDYdXDzkhs-unsplash.jpg);
+    position: relative;
+
+ }
+ #card-btnn{
+    color: white;
+    background-color:#d36b72 ;
+    padding: 10px 10px;
+    font-size: .9em;
+    
+ }
+ #sec-card{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(5px);
+    background-color: rgba(240, 255, 255, 0.297);
+    z-index: 100;
+    
+    
+    
+
+ }
+ #card-btnn:hover{
+    box-shadow: 2px 2px 7px;
+ }
+
+ .parallax,
+ .parallax h1{
+     color: rgba(240, 248, 255, 0.836);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     
+    }
+    .parallax-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .parallax-2 h1{
+        color: rgba(240, 248, 255, 0.836);
+        width: 50%;
+    }
+    .running-text{
+        position: relative;
+        
+        
+    }
+   .run-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation-delay: 0;
+    font-size: 5em;
+    color: rgba(240, 248, 255, 0.505);
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    
+
+   }
+   .run-text2{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    animation-delay: 0;
+    font-size: 5em;
+    color: rgba(240, 248, 255, 0.502);
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+   }
+ 
+ @media (max-width: 780px) {
+    #sec-card-h1{
+        font-size: 1em;
+    }
+    .card{
+        font-size: 0.6em;
+    }
+    .run-text,
+    .run-text2{
+        font-size: 3em;
+    }
+   
+    #card-btnn{
+     
+        padding: 5px 5px;
+        border: 1px solid;
+        font-size: .7em;
+        box-shadow: 2px 2px 7px;
+     }
+ 
+    }
+
+    .sec-sect{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: black; */
+        background-image:url("./eduardo-cano-photo-co-9xL_8KCEQqE-unsplash.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .sec-sect h2{
+        width: 70%;
+        text-align: center;
+        color: rgba(240, 248, 255, 0.836) ;
+        margin-top: 15px;
+        
+        
+    }
+    .sec-sect h4{
+        color: rgba(240, 248, 255, 0.836) ;
+        
+    }
+    #card--1{
+        background-color: rgba(240, 248, 255, 0);
+    }
+    #card--1 p{
+       color: rgba(240, 248, 255, 0.836) ;
+
+   }
+   .last-sec{
+    
+    position: relative;
+    background-image: url("./rafael-garcin-62LDvl0RJOk-unsplash.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+   }
+ 
+   .last-chnage{
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.457);
+   }
+
+
+  
